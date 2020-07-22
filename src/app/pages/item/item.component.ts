@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginaService } from '../../services/info-pagina.service';
 
 @Component({
   selector: 'app-item',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemComponent implements OnInit {
 
-  constructor() { }
+  constructor(private infoService: InfoPaginaService) {
+    this.infoService.obtenerInfo();
+   }
 
   ngOnInit() {
   }
