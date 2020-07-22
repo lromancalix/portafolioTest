@@ -16,7 +16,7 @@ export class InfoPaginaService {
   cargada = false;
 
   constructor( private http: HttpClient ) {
-   
+    this.obtenerInfo();
    }
 
 
@@ -33,7 +33,6 @@ export class InfoPaginaService {
      return this.http.get( `${environment.url_service}/equipo.json` )
             .subscribe( (response: any) => {
               this.equipo = response;
-              console.log(response);
             } ) ;
    }
 
