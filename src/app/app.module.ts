@@ -11,6 +11,8 @@ import { ItemComponent } from './pages/item/item.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './shared/loading/loading.component';
+import { RouterModule } from '@angular/router';
+import { SeachComponent } from './pages/seach/seach.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { LoadingComponent } from './shared/loading/loading.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    LoadingComponent
+    LoadingComponent,
+    SeachComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

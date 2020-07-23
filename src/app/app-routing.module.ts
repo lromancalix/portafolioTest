@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { ItemComponent } from './pages/item/item.component';
+import { SeachComponent } from './pages/seach/seach.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: PortafolioComponent
+  },
+  {
+    path: 'buscar/:termino',
+    component: SeachComponent
   },
   {
     path: '**',
